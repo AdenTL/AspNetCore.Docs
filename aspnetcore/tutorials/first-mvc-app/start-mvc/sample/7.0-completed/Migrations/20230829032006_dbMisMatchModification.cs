@@ -35,8 +35,6 @@ namespace MvcMovie.Migrations
 
             migrationBuilder.DropPrimaryKey("PK_Movie", "Movie");
 
-
-
             migrationBuilder.DropColumn("Id", "Movie");
 
             migrationBuilder.AddColumn<int>(

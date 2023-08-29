@@ -17,6 +17,61 @@ html {
   min-height: 100%;
 }
 
+
 body {
   margin-bottom: 60px;
+  background-color: slategray;
 }
+
+.navbar {
+    background-color: darkorange;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tbody {
+  background-color: darkgray;
+  border-color: black;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+th, tr, dl {
+  border: 1px solid;
+}
+
+th {
+  color: lightblue;
+  border-color: black;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+td {
+  color: darkslategray;
+}
+
+main > p > a {
+  font-family: monospace;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: azure;
+  background-color: green
+}
+
+.container {
+    color: darkorange;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+

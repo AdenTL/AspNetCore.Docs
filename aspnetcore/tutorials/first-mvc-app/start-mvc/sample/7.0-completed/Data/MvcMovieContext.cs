@@ -15,18 +15,5 @@ namespace MvcMovie.Data
         }
 
         public DbSet<MvcMovie.Models.Movie> Movie { get; set; } = default!;
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity("MvcMovie.Models.Movie", b =>
-        //        {
-        //            b.Property<int>("Id")
-        //                .ValueGeneratedOnAdd()
-        //                .HasColumnType("int");
-
-        //            b.HasKey("Id");
-
-        //            b.ToTable("Movie");
-        //        });
-        //}
     }
 }

@@ -31,5 +31,14 @@ namespace MvcMovie.Models
         [StringLength(5)]
         [Required]
         public string? Rating { get; set; }
+
+        private string? _director;
+
+        [Column(TypeName = "varchar(max)")]
+        public string? Director
+        {
+            get { return _director; }
+            set { _director = value?.Trim(); }
+        }
     }
 }
