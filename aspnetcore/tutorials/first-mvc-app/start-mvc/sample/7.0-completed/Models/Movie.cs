@@ -6,6 +6,7 @@ namespace MvcMovie.Models
 {
     public class Movie
     {
+        [Key]
         public int Id { get; set; }
 
         [StringLength(60, MinimumLength = 3)]
@@ -13,8 +14,8 @@ namespace MvcMovie.Models
         public string? Title { get; set; }
 
         [Display(Name = "Release Date")]
-        [DataType(DataType.Date)]
-        public DateTime ReleaseDate { get; set; }
+        [DataType(DataType.DateTime)]
+        public DateTime? ReleaseDate { get; set; }
 
         [Range(1, 100)]
         [DataType(DataType.Currency)]
